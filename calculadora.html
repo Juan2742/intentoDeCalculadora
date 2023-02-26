@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+</head>
+
+<body>
+
+<section id="primeraParte">
+    <h1>Calculadora</h1>
+    <p>Ingresa los valores para hacer la operación (solo se aceptan dos):</p>
+    <h2>Primer valor:</h2>
+    <input type="number" id="primerDigito"><br>
+    <h2>Segundo valor:</h2>
+    <input type="number" id="segundoDigito">
+</section>
+
+<section id = decirSiSeMultiplicaoDivide>
+    <input type="radio" id="suma">
+    <label>Suma</label>
+    <br><input type="radio" id="resta">
+    <label>Resta</label>
+    <br><input type="radio" id="multiplicacion">
+    <label>Multiplicacion</label>
+    <br><input type="radio" id="division">
+    <label>Division</label>
+</section>
+
+<section id="botonParaHacerLaOperacion">
+    <button onclick= "inicio ()" id="botonOperacion">Realizar</button>
+</section>
+    
+<script src="./calculadorajs/calculadora.js"></script>
+
+</body>
+</html>
