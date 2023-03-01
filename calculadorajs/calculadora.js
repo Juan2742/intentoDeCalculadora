@@ -3,12 +3,34 @@
 
 function inicio (){
 
-    let primerDigito = document.getElementById ("primerDigito")
-    let segundoDigito = document.getElementById ("segundoDigito") 
+    let primerDigito = document.getElementById ("primerDigito").value
+    let segundoDigito = document.getElementById ("segundoDigito").value
 
     let primerNumero = primerDigito
     let segundoNumero = segundoDigito
+    alert("Estos son tus cifras:" + primerNumero + " y " + segundoNumero)
 
-alert(primerNumero + " " + segundoNumero)
+    let inputSuma = document.getElementById("suma")
+    let inputResta = document.getElementById("resta")
+    let inputMultiplicacion = document.getElementById("multiplicacion")
+    let inputDivision = document.getElementById("division")
+
+if (inputSuma.checked){
+    operacionSuma ()
+
+}
+
+    
+
+}
+
+function operacionSuma (){
+
+
+
+
+}
+function crearMensaje(operacion){
+
 
 }

@@ -19,15 +19,15 @@
     <input type="number" id="segundoDigito">
 </section>
 
-<section id = decirSiSeMultiplicaoDivide>
-    <input type="radio" id="suma">
-    <label>Suma</label>
-    <br><input type="radio" id="resta">
-    <label>Resta</label>
-    <br><input type="radio" id="multiplicacion">
-    <label>Multiplicacion</label>
-    <br><input type="radio" id="division">
-    <label>Division</label>
+<section id ="seccionOperacion"> 
+    <input type="radio" id="suma" name="inputOperacion" checked>
+    <label for="suma">Suma</label>
+    <br><input type="radio" id="resta" name="inputOperacion">
+    <label for="resta">Resta</label>
+    <br><input type="radio" id="multiplicacion" name="inputOperacion">
+    <label for="multiplicacion">Multiplicacion</label>
+    <br><input type="radio" id="division" name="inputOperacion">
+    <label for="division">Division</label>
 </section>
 
 <section id="botonParaHacerLaOperacion">
@@ -35,6 +35,9 @@
 </section>
     
 <script src="./calculadorajs/calculadora.js"></script>
+<section id="mensajes">
+
+</section>
 
 </body>
 </html>
