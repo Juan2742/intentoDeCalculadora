@@ -8,15 +8,31 @@ function inicio (){
 
     let primerNumero = primerDigito
     let segundoNumero = segundoDigito
-    alert("Estos son tus cifras:" + primerNumero + " y " + segundoNumero)
+    alert("Estos son tus cifras: " + primerNumero + " y " + segundoNumero)
 
     let inputSuma = document.getElementById("suma")
     let inputResta = document.getElementById("resta")
     let inputMultiplicacion = document.getElementById("multiplicacion")
     let inputDivision = document.getElementById("division")
 
-if (inputSuma.checked){
+if (inputSuma){
     operacionSuma ()
+
+}
+else if (inputResta){
+
+
+}
+else if (){
+
+    
+}
+else if (){
+
+    
+}
+else {
+
 
 }
 
