@@ -3,8 +3,8 @@
 
 function inicio (){
 
-    let primerDigito = document.getElementById ("primerDigito").value
-    let segundoDigito = document.getElementById ("segundoDigito").value
+    let primerDigito = parseFloat(document.getElementById ("primerDigito").value)
+    let segundoDigito = parseFloat(document.getElementById ("segundoDigito").value)
 
     let primerNumero = primerDigito
     let segundoNumero = segundoDigito
@@ -33,12 +33,14 @@ else if (inputResta.checked){
 else if (inputMultiplicacion.checked){
     alert("Tu multiplicaras " + primerNumero + " por " + segundoNumero)
     alert("El resultado aparecera debajo del boton Realizar")
+    let resultado = primerNumero * segundoNumero
     operacionMultiplicacion(primerNumero, segundoNumero, resultado)
     
 }
 else if (inputDivision.checked){
     alert("Tu dividiras " + primerNumero + " dividido entre " + segundoNumero)
     alert("El resultado aparecera debajo del boton Realizar")
+    let resultado = primerNumero / segundoNumero
     operacionDivision(primerNumero, segundoNumero, resultado)
     
 }
@@ -69,11 +71,21 @@ function operacionResta(primerNumero, segundoNumero, resultado){
 
 }
 function operacionMultiplicacion(primerNumero, segundoNumero, resultado){
+    let sectionMensajes = document.getElementById("mensajes")
+    let parrafo = document.createElement("p")
 
+    parrafo.innerHTML = primerNumero + " x " + segundoNumero + " = " + resultado
+
+    sectionMensajes.appendChild(parrafo)
 
 }
 function operacionDivision(primerNumero, segundoNumero, resultado){
+    let sectionMensajes = document.getElementById("mensajes")
+    let parrafo = document.createElement("p")
 
+    parrafo.innerHTML = primerNumero + " / " + segundoNumero + " = " + resultado
+
+    sectionMensajes.appendChild(parrafo)
 
 }
 function reiniciar(){
