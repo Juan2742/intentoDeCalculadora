@@ -4,45 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./calculadorajs/calculadora.js">
+    <link rel="stylesheet" href="./calculadoracss/calculadora.css">
     <title>Calculadora</title>
 
 </head>
 
 <body>
+<div id="container">
 
-<section id="primeraParte">
-    <h1>Calculadora</h1>
-    <p>Ingresa los valores para hacer la operación (solo se aceptan dos):</p>
-    <h2>Primer valor:</h2>
-    <input type="number" id="primerDigito"><br>
-    <h2>Segundo valor:</h2>
-    <input type="number" id="segundoDigito">
-</section>
+    <section id="primeraParte">
+        <div id="containertitulo">
+        <h1 id="titulo">Calculadora</h1>
+        </div>
+        <p class="parrafo">Ingresa los valores para hacer la operación (solo se aceptan dos):</p>
+        <div class="containerH2FP">
+        <h2 class="tituloPPP">Primer valor:</h2>
+        </div>
+        <input type="number" id="primerDigito"><br>
+        <div class="containerH2FP">
+        <h2 class="tituloPPP">Segundo valor:</h2>
+        </div>
+        <input type="number" id="segundoDigito">
+    </section>
 
-<section id ="seccionOperacion"> 
-    <input type="radio" id="suma" name="inputOperacion">
-    <label for="suma">Suma</label>
-    <br><input type="radio" id="resta" name="inputOperacion">
-    <label for="resta">Resta</label>
-    <br><input type="radio" id="multiplicacion" name="inputOperacion">
-    <label for="multiplicacion">Multiplicacion</label>
-    <br><input type="radio" id="division" name="inputOperacion">
-    <label for="division">Division</label>
-</section>
+    <section id ="seccionOperacion"> 
+        <input type="radio" id="suma" name="inputOperacion">
+        <label for="suma">Suma</label>
+        <br><input type="radio" id="resta" name="inputOperacion">
+        <label for="resta">Resta</label>
+        <br><input type="radio" id="multiplicacion" name="inputOperacion">
+        <label for="multiplicacion">Multiplicacion</label>
+        <br><input type="radio" id="division" name="inputOperacion">
+        <label for="division">Division</label>
+    </section>
 
-<section id="botonParaHacerLaOperacion">
-    <button onclick= "inicio ()" id="botonOperacion">Realizar</button>
-</section>
-    
+    <section id="botonParaHacerLaOperacion">
+        <button onclick= "inicio ()" id="botonOperacion">Realizar</button>
+    </section>
+</div>  
 <script src="./calculadorajs/calculadora.js"></script>
-<section id="mensajes">
-    Resultados
+    <section id="mensajes">
+        <h2 id="titulo2">Resultados</h2>
 
-</section>
-<section id="reiniciar">
-    <button onclick="reiniciar()" id="botonReiniciar">Reiniciar pagina</button>
-</section>
+    </section>
+    <section id="reiniciar">
+        <button onclick="reiniciar()" id="botonReiniciar">Reiniciar pagina</button>
+    </section>
 
 </body>
 </html>

@@ -1,0 +1,46 @@
+#titulo{
+    color: rgb(243, 215, 215);
+    width: 200px;
+    height: 30px;
+    margin: 0 auto;
+    font-family: Georgia;
+
+}
+#containertitulo{
+    width: 90%;
+    padding: 1em;
+    text-align: center;
+    border: 3px solid rgb(121, 117, 117);
+    margin: 0 auto;
+    background: rgb(101, 160, 12);
+
+}
+.parrafo{
+    color: rgb(243, 215, 215);
+    margin-left: 10px;
+    margin-bottom: 30px;
+
+}
+.containerH2FP{
+    width: 20%;
+    height: 20px;
+    padding: 1em;
+    text-align: center;
+    border: 1.5px solid rgb(233, 232, 232);
+    margin-left: 10px;
+    background: rgb(243, 215, 215);
+
+}
+.tituloPPP{
+    margin-bottom: 5px;
+
+}
+#container{
+    width: 70%;
+    padding: 1em;
+    text-align: left;
+    border: 10px solid rgb(121, 117, 117);
+    margin: 0 auto;
+    background: rgb(80, 105, 105);
+
+}
